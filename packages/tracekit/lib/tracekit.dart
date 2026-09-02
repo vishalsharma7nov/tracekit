@@ -2,6 +2,8 @@
 ///
 /// Replaces [print], `log()`, and `debugPrint()` with a pipeline-based logger
 /// supporting levels, sinks, call-site capture, and PII redaction.
+library;
+
 export 'src/caller/caller_info.dart';
 export 'src/caller/caller_info_config.dart';
 export 'src/caller/caller_resolver.dart';
