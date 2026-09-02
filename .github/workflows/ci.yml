@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  analyze-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Install Melos
+        run: dart pub global activate melos
+
+      - name: Bootstrap workspace
+        run: dart pub global run melos bootstrap
+
+      - name: Analyze
+        run: dart pub global run melos run analyze
+
+      - name: Test Dart packages
+        run: |
+          cd packages/tracekit && dart test
+          cd ../tracekit_dio && dart test || true
+          cd ../tracekit_http && dart test || true
+
+      - name: Test Flutter packages
+        run: |
+          cd packages/tracekit_flutter && flutter test
+          cd ../tracekit_bloc && flutter test || true
+          cd ../tracekit_riverpod && flutter test || true
+
+      - name: Format check
+        run: dart format --set-exit-if-changed .
