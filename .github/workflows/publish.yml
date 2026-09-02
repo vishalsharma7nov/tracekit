@@ -1,0 +1,78 @@
+name: Publish to pub.dev
+
+on:
+  push:
+    tags:
+      - 'tracekit-v[0-9]+.[0-9]+.[0-9]+*'
+      - 'tracekit_flutter-v[0-9]+.[0-9]+.[0-9]+*'
+      - 'tracekit_dio-v[0-9]+.[0-9]+.[0-9]+*'
+      - 'tracekit_http-v[0-9]+.[0-9]+.[0-9]+*'
+      - 'tracekit_bloc-v[0-9]+.[0-9]+.[0-9]+*'
+      - 'tracekit_riverpod-v[0-9]+.[0-9]+.[0-9]+*'
+      - 'tracekit_lints-v[0-9]+.[0-9]+.[0-9]+*'
+      - 'tracekit_generator-v[0-9]+.[0-9]+.[0-9]+*'
+
+jobs:
+  publish_tracekit:
+    if: startsWith(github.ref, 'refs/tags/tracekit-v')
+    permissions:
+      id-token: write
+    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+    with:
+      working-directory: packages/tracekit
+
+  publish_tracekit_flutter:
+    if: startsWith(github.ref, 'refs/tags/tracekit_flutter-v')
+    permissions:
+      id-token: write
+    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+    with:
+      working-directory: packages/tracekit_flutter
+
+  publish_tracekit_dio:
+    if: startsWith(github.ref, 'refs/tags/tracekit_dio-v')
+    permissions:
+      id-token: write
+    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+    with:
+      working-directory: packages/tracekit_dio
+
+  publish_tracekit_http:
+    if: startsWith(github.ref, 'refs/tags/tracekit_http-v')
+    permissions:
+      id-token: write
+    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+    with:
+      working-directory: packages/tracekit_http
+
+  publish_tracekit_bloc:
+    if: startsWith(github.ref, 'refs/tags/tracekit_bloc-v')
+    permissions:
+      id-token: write
+    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+    with:
+      working-directory: packages/tracekit_bloc
+
+  publish_tracekit_riverpod:
+    if: startsWith(github.ref, 'refs/tags/tracekit_riverpod-v')
+    permissions:
+      id-token: write
+    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+    with:
+      working-directory: packages/tracekit_riverpod
+
+  publish_tracekit_lints:
+    if: startsWith(github.ref, 'refs/tags/tracekit_lints-v')
+    permissions:
+      id-token: write
+    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+    with:
+      working-directory: packages/tracekit_lints
+
+  publish_tracekit_generator:
+    if: startsWith(github.ref, 'refs/tags/tracekit_generator-v')
+    permissions:
+      id-token: write
+    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+    with:
+      working-directory: packages/tracekit_generator
