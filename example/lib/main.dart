@@ -64,7 +64,8 @@ class HomePage extends StatelessWidget {
               onPressed: () async {
                 final dio = Dio()..interceptors.add(TraceKitDioInterceptor());
                 try {
-                  await dio.get<Map<String, dynamic>>('https://httpbin.org/get');
+                  await dio
+                      .get<Map<String, dynamic>>('https://httpbin.org/get');
                 } on Object catch (e, st) {
                   Trace.error('Dio failed', error: e, stackTrace: st);
                 }
