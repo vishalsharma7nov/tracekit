@@ -39,14 +39,16 @@ void main() {
 
   group('RateLimitFilter', () {
     test('allows records below min level without limit', () {
-      final filter = RateLimitFilter(maxPerWindow: 1, minLevel: TraceLevel.error);
+      final filter =
+          RateLimitFilter(maxPerWindow: 1, minLevel: TraceLevel.error);
       final debugRecord = record.copyWith(level: TraceLevel.debug);
       expect(filter.shouldLog(debugRecord), isTrue);
       expect(filter.shouldLog(debugRecord), isTrue);
     });
 
     test('rate limits high severity records', () {
-      final filter = RateLimitFilter(maxPerWindow: 2, minLevel: TraceLevel.warn);
+      final filter =
+          RateLimitFilter(maxPerWindow: 2, minLevel: TraceLevel.warn);
       final warn = record.copyWith(level: TraceLevel.warn);
       expect(filter.shouldLog(warn), isTrue);
       expect(filter.shouldLog(warn), isTrue);

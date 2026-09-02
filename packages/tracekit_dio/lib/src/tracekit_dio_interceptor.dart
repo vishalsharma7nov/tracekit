@@ -15,11 +15,23 @@ class TraceKitDioInterceptor extends Interceptor {
   }) : _logger = logger ?? TraceKit.logger;
 
   final TraceLogger _logger;
+
+  /// Whether to log request headers.
   final bool logRequestHeaders;
+
+  /// Whether to log request bodies.
   final bool logRequestBody;
+
+  /// Whether to log response headers.
   final bool logResponseHeaders;
+
+  /// Whether to log response bodies.
   final bool logResponseBody;
+
+  /// Header names redacted from logs (lowercase).
   final Set<String> redactHeaders;
+
+  /// Body keys redacted from logs (lowercase).
   final Set<String> redactBodyKeys;
 
   final Map<RequestOptions, DateTime> _startTimes = {};

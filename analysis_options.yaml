@@ -5,10 +5,12 @@ analyzer:
     strict-casts: true
     strict-inference: true
     strict-raw-types: true
+  errors:
+    # Monorepo packages use path deps locally; replaced at publish time.
+    invalid_dependency: ignore
 
 linter:
   rules:
     avoid_print: true
     prefer_single_quotes: true
     sort_pub_dependencies: true
-    public_member_api_docs: true

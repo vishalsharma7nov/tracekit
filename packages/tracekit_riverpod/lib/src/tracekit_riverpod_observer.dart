@@ -5,7 +5,7 @@ import 'package:tracekit/tracekit.dart';
 class TraceKitRiverpodObserver extends ProviderObserver {
   /// Creates [TraceKitRiverpodObserver].
   TraceKitRiverpodObserver({TraceLogger? logger})
-    : _logger = logger ?? TraceKit.logger;
+      : _logger = logger ?? TraceKit.logger;
 
   final TraceLogger _logger;
 

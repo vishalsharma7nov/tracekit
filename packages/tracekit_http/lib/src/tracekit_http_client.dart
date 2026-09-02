@@ -13,6 +13,8 @@ class TraceKitHttpClient extends http.BaseClient {
 
   final http.Client _inner;
   final TraceLogger _logger;
+
+  /// Header names redacted from logs (lowercase).
   final Set<String> redactHeaders;
 
   @override

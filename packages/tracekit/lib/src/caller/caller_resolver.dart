@@ -25,9 +25,6 @@ class CallerResolver {
 
     for (final frame in frames) {
       final uri = frame.uri;
-      if (uri == null) {
-        continue;
-      }
       if (_shouldSkip(uri.toString())) {
         continue;
       }

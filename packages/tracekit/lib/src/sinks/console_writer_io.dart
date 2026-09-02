@@ -15,4 +15,5 @@ class IoConsoleWriter implements ConsoleWriter {
   }
 }
 
+/// Creates the platform [ConsoleWriter] implementation.
 ConsoleWriter createConsoleWriter() => IoConsoleWriter();

@@ -1,8 +1,6 @@
 import 'package:test/test.dart';
 import 'package:tracekit/tracekit.dart';
 
-import 'helpers/capturing_sink.dart';
-
 void main() {
   setUp(() => TraceKit.reset());
 
@@ -94,7 +92,9 @@ void main() {
       await TraceKit.init(
         TraceConfig(
           sinks: [memory],
-          filters: [TagFilter({'Payment'})],
+          filters: [
+            TagFilter({'Payment'})
+          ],
           captureCallerInfo: false,
         ),
       );

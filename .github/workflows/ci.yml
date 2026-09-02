@@ -29,14 +29,14 @@ jobs:
       - name: Test Dart packages
         run: |
           cd packages/tracekit && dart test
-          cd ../tracekit_dio && dart test || true
-          cd ../tracekit_http && dart test || true
+          cd ../tracekit_dio && dart test
+          cd ../tracekit_http && dart test
 
       - name: Test Flutter packages
         run: |
           cd packages/tracekit_flutter && flutter test
-          cd ../tracekit_bloc && flutter test || true
-          cd ../tracekit_riverpod && flutter test || true
+          cd ../tracekit_bloc && flutter test
+          cd ../tracekit_riverpod && flutter test
 
       - name: Format check
         run: dart format --set-exit-if-changed .

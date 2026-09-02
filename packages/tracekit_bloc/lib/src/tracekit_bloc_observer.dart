@@ -5,7 +5,7 @@ import 'package:tracekit/tracekit.dart';
 class TraceKitBlocObserver extends BlocObserver {
   /// Creates [TraceKitBlocObserver].
   TraceKitBlocObserver({TraceLogger? logger})
-    : _logger = logger ?? TraceKit.logger;
+      : _logger = logger ?? TraceKit.logger;
 
   final TraceLogger _logger;
 

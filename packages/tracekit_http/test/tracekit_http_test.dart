@@ -50,7 +50,8 @@ void main() {
       final response = await client.send(request);
       await response.stream.drain<void>();
 
-      final headers = memory.records.first.context['headers'] as Map<String, String>;
+      final headers =
+          memory.records.first.context['headers'] as Map<String, String>;
       expect(headers['Authorization'], '***REDACTED***');
     });
   });

@@ -21,4 +21,5 @@ class WebConsoleWriter implements ConsoleWriter {
   }
 }
 
+/// Creates the platform [ConsoleWriter] implementation.
 ConsoleWriter createConsoleWriter() => WebConsoleWriter();

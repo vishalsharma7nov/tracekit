@@ -1,16 +1,12 @@
-import 'dart:async';
-
 import 'caller/caller_info.dart';
 import 'caller/caller_resolver.dart';
 import 'config/trace_config.dart';
 import 'context/trace_context.dart';
 import 'filters/filter.dart';
-import 'filters/level_filter.dart';
 import 'models/log_record.dart';
 import 'models/trace_level.dart';
 import 'otel/otel_context.dart';
 import 'redaction/redactor.dart';
-import 'sinks/sink.dart';
 
 /// Injectable logger instance with optional tag and bound context.
 class TraceLogger {

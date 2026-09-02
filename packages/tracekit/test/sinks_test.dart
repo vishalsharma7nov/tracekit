@@ -28,7 +28,8 @@ void main() {
 
   group('NoOpSink', () {
     test('discards all records without error', () {
-      expect(() => NoOpSink.instance.write(_record('ignored')), returnsNormally);
+      expect(
+          () => NoOpSink.instance.write(_record('ignored')), returnsNormally);
     });
   });
 
