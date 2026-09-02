@@ -14,8 +14,7 @@ dependencies:
     sdk: flutter
   flutter_riverpod: ^2.6.1
   riverpod: ^2.6.1
-  tracekit:
-    path: ../tracekit
+  tracekit: ^0.1.0
 
 dev_dependencies:
   flutter_lints: ^5.0.0

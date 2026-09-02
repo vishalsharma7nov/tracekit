@@ -15,8 +15,7 @@ dependencies:
   flutter:
     sdk: flutter
   share_plus: ^10.1.4
-  tracekit:
-    path: ../tracekit
+  tracekit: ^0.1.0
 
 dev_dependencies:
   flutter_lints: ^5.0.0

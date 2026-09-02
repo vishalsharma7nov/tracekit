@@ -10,8 +10,7 @@ environment:
   sdk: ^3.5.0
 
 dependencies:
-  tracekit:
-    path: ../tracekit
+  tracekit: ^0.1.0
 
 dev_dependencies:
   build_runner: ^2.4.13

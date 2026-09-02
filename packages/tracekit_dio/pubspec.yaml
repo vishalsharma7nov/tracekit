@@ -10,8 +10,7 @@ environment:
 
 dependencies:
   dio: ^5.7.0
-  tracekit:
-    path: ../tracekit
+  tracekit: ^0.1.0
 
 dev_dependencies:
   lints: ^5.1.0
