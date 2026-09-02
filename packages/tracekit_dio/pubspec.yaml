@@ -1,9 +1,9 @@
 name: tracekit_dio
 description: Dio HTTP interceptor for TraceKit with header/body redaction.
 version: 0.3.0
-homepage: https://github.com/tracekit/tracekit
-repository: https://github.com/tracekit/tracekit/tree/main/packages/tracekit_dio
-issue_tracker: https://github.com/tracekit/tracekit/issues
+homepage: https://github.com/vishalsharma7nov/tracekit
+repository: https://github.com/vishalsharma7nov/tracekit/tree/master/packages/tracekit_dio
+issue_tracker: https://github.com/vishalsharma7nov/tracekit/issues
 
 environment:
   sdk: ^3.5.0

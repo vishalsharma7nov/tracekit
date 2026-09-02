@@ -2,9 +2,9 @@ name: tracekit_generator
 description: >-
   Optional build_runner helpers for compile-time caller injection in TraceKit.
 version: 0.1.0
-homepage: https://github.com/tracekit/tracekit
-repository: https://github.com/tracekit/tracekit/tree/main/packages/tracekit_generator
-issue_tracker: https://github.com/tracekit/tracekit/issues
+homepage: https://github.com/vishalsharma7nov/tracekit
+repository: https://github.com/vishalsharma7nov/tracekit/tree/master/packages/tracekit_generator
+issue_tracker: https://github.com/vishalsharma7nov/tracekit/issues
 
 environment:
   sdk: ^3.5.0

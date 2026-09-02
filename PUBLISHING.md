@@ -3,7 +3,7 @@
 ## Prerequisites
 
 1. Google account linked at https://pub.dev
-2. GitHub repository created at https://github.com/tracekit/tracekit
+2. GitHub repository created at https://github.com/vishalsharma7nov/tracekit
 3. All tests passing locally
 4. `dart pub global activate pana`
 

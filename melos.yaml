@@ -1,5 +1,5 @@
 name: tracekit_workspace
-repository: https://github.com/tracekit/tracekit
+repository: https://github.com/vishalsharma7nov/tracekit
 
 packages:
   - packages/**

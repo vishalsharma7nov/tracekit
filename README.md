@@ -1,8 +1,15 @@
 # TraceKit
 
+[![CI](https://github.com/vishalsharma7nov/tracekit/actions/workflows/ci.yml/badge.svg)](https://github.com/vishalsharma7nov/tracekit/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/vishalsharma7nov/tracekit)](https://github.com/vishalsharma7nov/tracekit/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 Structured logging ecosystem for Dart and Flutter. Replaces `print()`, `log()`,
 and `debugPrint()` with levels, sinks, call-site capture, redaction, and
 optional Flutter UI.
+
+**GitHub:** https://github.com/vishalsharma7nov/tracekit  
+**Release:** https://github.com/vishalsharma7nov/tracekit/releases/tag/v1.0.0
 
 ## Packages
 

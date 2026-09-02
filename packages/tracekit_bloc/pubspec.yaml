@@ -1,9 +1,9 @@
 name: tracekit_bloc
 description: BLoC observer for TraceKit logging.
 version: 0.4.0
-homepage: https://github.com/tracekit/tracekit
-repository: https://github.com/tracekit/tracekit/tree/main/packages/tracekit_bloc
-issue_tracker: https://github.com/tracekit/tracekit/issues
+homepage: https://github.com/vishalsharma7nov/tracekit
+repository: https://github.com/vishalsharma7nov/tracekit/tree/master/packages/tracekit_bloc
+issue_tracker: https://github.com/vishalsharma7nov/tracekit/issues
 
 environment:
   sdk: ^3.5.0
