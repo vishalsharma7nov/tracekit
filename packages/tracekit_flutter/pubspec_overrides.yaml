@@ -1,0 +1,4 @@
+# Local monorepo development — ignored by pub.dev publishing
+dependency_overrides:
+  tracekit:
+    path: ../tracekit

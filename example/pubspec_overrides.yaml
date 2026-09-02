@@ -1,0 +1,15 @@
+# Local monorepo resolution — keeps example on path packages while
+# published packages declare hosted tracekit constraints for pub.dev.
+dependency_overrides:
+  tracekit:
+    path: ../packages/tracekit
+  tracekit_bloc:
+    path: ../packages/tracekit_bloc
+  tracekit_dio:
+    path: ../packages/tracekit_dio
+  tracekit_flutter:
+    path: ../packages/tracekit_flutter
+  tracekit_http:
+    path: ../packages/tracekit_http
+  tracekit_riverpod:
+    path: ../packages/tracekit_riverpod
