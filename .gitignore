@@ -1,0 +1,31 @@
+# Dart & Flutter
+.dart_tool/
+.packages
+build/
+pubspec.lock
+**/pubspec.lock
+.flutter-plugins
+.flutter-plugins-dependencies
+.melos_tool/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage & reports
+coverage/
+pana_report/
+
+# Generated
+*.g.dart
+*.mocks.dart
+
+# Example build artifacts
+example/build/

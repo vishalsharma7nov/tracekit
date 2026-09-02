@@ -1,0 +1,12 @@
+name: tracekit_lints
+description: Recommended lint rules for TraceKit — bans print/log/debugPrint in app code.
+version: 0.1.0
+homepage: https://github.com/tracekit/tracekit
+repository: https://github.com/tracekit/tracekit/tree/main/packages/tracekit_lints
+issue_tracker: https://github.com/tracekit/tracekit/issues
+
+environment:
+  sdk: ^3.5.0
+
+dev_dependencies:
+  lints: ^5.1.0

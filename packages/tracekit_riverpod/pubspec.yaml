@@ -1,0 +1,23 @@
+name: tracekit_riverpod
+description: Riverpod observer for TraceKit logging.
+version: 0.4.0
+homepage: https://github.com/tracekit/tracekit
+repository: https://github.com/tracekit/tracekit/tree/main/packages/tracekit_riverpod
+issue_tracker: https://github.com/tracekit/tracekit/issues
+
+environment:
+  sdk: ^3.5.0
+  flutter: '>=3.24.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.6.1
+  riverpod: ^2.6.1
+  tracekit:
+    path: ../tracekit
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+  flutter_test:
+    sdk: flutter

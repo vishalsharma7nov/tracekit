@@ -1,0 +1,14 @@
+include: package:lints/recommended.yaml
+
+analyzer:
+  plugins:
+    # Custom plugin placeholder — use avoid_print from lints for now.
+
+linter:
+  rules:
+    avoid_print: true
+
+# Recommended analysis_options snippet for TraceKit consumers:
+# 1. Enable avoid_print (above)
+# 2. Do not import dart:developer for log() in app code
+# 3. Use Trace.info / Trace.debug instead of print / debugPrint

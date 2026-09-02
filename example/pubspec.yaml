@@ -1,0 +1,36 @@
+name: tracekit_example
+description: Demo app for the TraceKit logging ecosystem.
+publish_to: none
+
+environment:
+  sdk: ^3.5.0
+  flutter: '>=3.24.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  bloc: ^9.0.0
+  dio: ^5.7.0
+  flutter_bloc: ^9.1.0
+  flutter_riverpod: ^2.6.1
+  http: ^1.2.2
+  tracekit:
+    path: ../packages/tracekit
+  tracekit_bloc:
+    path: ../packages/tracekit_bloc
+  tracekit_dio:
+    path: ../packages/tracekit_dio
+  tracekit_flutter:
+    path: ../packages/tracekit_flutter
+  tracekit_http:
+    path: ../packages/tracekit_http
+  tracekit_riverpod:
+    path: ../packages/tracekit_riverpod
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
